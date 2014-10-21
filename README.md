@@ -1,42 +1,33 @@
-# tentacool-cookbook
+# Description
 
-TODO: Enter the cookbook description here.
+Installs/Configures tentacool
 
-## Supported Platforms
+# Requirements
 
-TODO: List your supported platforms.
+## Platform:
 
-## Attributes
+*No platforms defined*
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['tentacool']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+## Cookbooks:
 
-## Usage
+* apt
 
-### tentacool::default
+# Attributes
 
-Include `tentacool` in your node's `run_list`:
+* `node['tentacool']['repo']` -  Defaults to `"s3"`.
+* `node['tentacool']['install_method']` -  Defaults to `"package"`.
+* `node['tentacool']['options']` -  Defaults to `"nil # can be a Hash"`.
 
-```json
-{
-  "run_list": [
-    "recipe[tentacool::default]"
-  ]
-}
-```
+# Recipes
 
-## License and Authors
+* tentacool::config
+* tentacool::default
+* tentacool::install_package
+* tentacool::repo
+* tentacool::service
 
-Author:: Guilhem Lettron (<guilhem@lettron.fr>)
+# License and Maintainer
+
+Maintainer:: Guilhem Lettron (<guilhem@lettron.fr>)
+
+License:: Apache 2.0
