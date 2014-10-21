@@ -1,3 +1,6 @@
+[![Cookbook Version](https://img.shields.io/cookbook/v/tentacool.svg)](https://community.opscode.com/cookbooks/tentacool)
+[![Travis status](http://img.shields.io/travis/guilhem-cookbooks/tentacool.svg)](https://travis-ci.org/guilhem-cookbooks/tentacool)
+
 # Description
 
 Installs/Configures tentacool
